@@ -14,7 +14,7 @@ Read during Stage 5 (polish pass) of the pipeline in SKILL.md, and whenever buil
 
 - **Header anatomy:** top-left subtle title (13–14px, `text-secondary` or `text-primary`), optional top-right quiet action (`ALL`, `→`, or compact segmented control `DAY / WK / MO`). Never add thick horizontal divider lines under card headers unless the card contains a scrollable table.
 - **Breathing room:** at least 25–35% of a minimal card's interior stays clean negative space. Do not pack four unrelated charts, three paragraphs, and two buttons into one card.
-- **Nested rows:** inside list cards (to-do lists, alert feeds, chat histories), separate items using either delicate concentric sub-cards (1px ultra-low-opacity border) OR subtle 1px inset hairline dividers — never both heavy boxes and heavy shadows at once.
+- **Nested rows:** inside list cards (to-do lists, alert feeds, chat histories), separate items using either delicate concentric sub-cards (1px ultra-low-opacity border) OR subtle 1px inset hairline dividers; never use both heavy boxes and heavy shadows at once.
 
 ## 3. Segmented controls & micro-interactions
 
