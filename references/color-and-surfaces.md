@@ -31,7 +31,7 @@ Create figure-ground separation without heavy lines by defining four discrete su
 
 ### Text contrast tiers (luminance hierarchy)
 Never use just one text color. Define four semantic levels derived from the foreground polarity:
-- **`text-primary`:** high contrast (≥ 12:1 on base surface; avoid raw `#000000` on `#FFFFFF` — use `#0F1115` or `#111111` in light mode, and `#F3F4F6` or `#EDEDEF` in dark mode to reduce halation).
+- **`text-primary`:** high contrast (≥ 12:1 on base surface; avoid raw `#000000` on `#FFFFFF`, use `#0F1115` or `#111111` in light mode, and `#F3F4F6` or `#EDEDEF` in dark mode to reduce halation).
 - **`text-secondary`:** supporting copy, subtitles, inactive navigation (~60–70% contrast strength; target ≥ 4.5:1).
 - **`text-tertiary`:** metadata, timestamps, axis labels, placeholder text, secondary headline tokens (~40–50% contrast strength).
 - **`text-quaternary`:** disabled states and ultra-subtle structural hints.
@@ -39,7 +39,7 @@ Never use just one text color. Define four semantic levels derived from the fore
 ### Semantic color restraint
 When rendering positive/negative deltas, warnings, or statuses:
 - Never put full-saturation solid backgrounds behind semantic tags (e.g., avoid bright neon green pills).
-- Use low-opacity tinted fills (8–14% opacity of the semantic hue) paired with a high-contrast text shade of the same hue — or render plain text with a single 6px semantic dot or crisp directional arrow (↑ / ↓).
+- Use low-opacity tinted fills (8–14% opacity of the semantic hue) paired with a high-contrast text shade of the same hue, or render plain text with a single 6px semantic dot or crisp directional arrow (↑ / ↓).
 
 ## 2. Surface elevation, depth & lighting physics
 
@@ -61,9 +61,9 @@ A shadow alone looks blurry; a border alone looks flat and boxy. Pair a crisp 1p
 
 ### Multi-layer shadow construction
 Never use a single large `box-shadow` with high opacity. Build shadows in 2–3 physical layers:
-1. **Contact shadow (tight & darkest):** `0 1px 2px` with low blur — grounds the object against the surface beneath.
-2. **Ambient shadow (medium & soft):** `0 4px 12px` with negative spread (`-2px`) — simulates overhead diffused room light.
-3. **Floating shadow (overlays/modals only):** `0 16px 32px -8px` — reserved strictly for modals, menus, detached drawers.
+1. **Contact shadow (tight & darkest):** `0 1px 2px` with low blur, grounds the object against the surface beneath.
+2. **Ambient shadow (medium & soft):** `0 4px 12px` with negative spread (`-2px`), simulates overhead diffused room light.
+3. **Floating shadow (overlays/modals only):** `0 16px 32px -8px`, reserved strictly for modals, menus, detached drawers.
 
 - **Shadow tinting:** never use pure black `rgba(0,0,0,x)` over warm or cool light backgrounds. Tint shadows toward the darkest shade of your neutral palette (deep slate or warm umber) at 3–8% opacity.
 
