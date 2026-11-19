@@ -31,7 +31,7 @@ Default browser typography looks amateurish at extreme sizes. Apply inverse scal
 | **Caption / Subtext** | 12–13px | 400 | 1.40–1.50 | 0em |
 | **Micro-Label / Axis** | 10–11px | 500 | 1.20 | +0.02em to +0.06em (if uppercase) |
 
-\*Craft secret: avoid heavy 700–800 extra-bold weights on large KPI numbers (`$48,210`, `64°`, `€ 6,245.01`). Large display figures look dramatically more refined at 300 (Light), 400 (Regular), or 500 (Medium) — let scale do the work instead of heavy ink density.
+\*Craft secret: avoid heavy 700–800 extra-bold weights on large KPI numbers (`$48,210`, `64°`, `€ 6,245.01`). Large display figures look dramatically more refined at 300 (Light), 400 (Regular), or 500 (Medium); let scale do the work instead of heavy ink density.
 
 ## 3. Tonal compound typography
 
