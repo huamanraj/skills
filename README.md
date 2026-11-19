@@ -20,7 +20,7 @@ The skill adapts to any brand color, light or dark mode, and any framework (Reac
 ## Install
 
 ```bash
-npx skills add huamanraj/minimal-ui-craft
+npx skills add huamanraj/skills --skill minimal-ui-craft
 ```
 
 Or find it from your agent with [find-skills](https://www.skills.sh/vercel-labs/skills/find-skills): search for "minimal ui", "ui design", or "anti-slop".
