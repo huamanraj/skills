@@ -31,7 +31,7 @@ Create figure-ground separation without heavy lines by defining four discrete su
 
 ### Text contrast tiers (luminance hierarchy)
 Never use just one text color. Define four semantic levels derived from the foreground polarity:
-- **`text-primary`:** high contrast (≥ 12:1 on base surface; avoid raw `#000000` on `#FFFFFF`, use `#0F1115` or `#111111` in light mode, and `#F3F4F6` or `#EDEDEF` in dark mode to reduce halation).
+- **`text-primary`:** high contrast (≥ 12:1 on base surface; avoid raw `#000000` on `#FFFFFF`; use `#0F1115` or `#111111` in light mode, and `#F3F4F6` or `#EDEDEF` in dark mode to reduce halation).
 - **`text-secondary`:** supporting copy, subtitles, inactive navigation (~60–70% contrast strength; target ≥ 4.5:1).
 - **`text-tertiary`:** metadata, timestamps, axis labels, placeholder text, secondary headline tokens (~40–50% contrast strength).
 - **`text-quaternary`:** disabled states and ultra-subtle structural hints.
