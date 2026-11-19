@@ -2,10 +2,13 @@
 name: minimal-ui-craft
 description: Build minimal, designer-crafted user interfaces and eliminate generic "AI slop" styling. Use this skill whenever designing, building, reviewing, or restyling any web UI — dashboards, landing pages, SaaS apps, admin panels, settings screens, or individual components — especially when the user asks for a minimal, clean, premium, or designer-quality look, mentions "AI slop", or says generated UI looks generic or amateurish. The rules are theme-agnostic and adapt to any brand color, light or dark mode, and any framework (React, Tailwind, plain CSS, etc.).
 ---
+name: minimal-ui-craft
+description: Build minimal, designer-crafted user interfaces and eliminate generic "AI slop" styling. Use this skill whenever designing, building, reviewing, or restyling any web UI , dashboards, landing pages, SaaS apps, admin panels, settings screens, or individual components , especially when the user asks for a minimal, clean, premium, or designer-quality look, mentions "AI slop", or says generated UI looks generic or amateurish. The rules are theme-agnostic and adapt to any brand color, light or dark mode, and any framework (React, Tailwind, plain CSS, etc.).
+---
 
 # Minimal UI Craft
 
-A universal, theme-agnostic UI engineering and visual design specification: the structural, optical, typographic, and lighting rules that separate designer-crafted minimalism from generic "AI slop." Apply these principles dynamically on top of any user-provided design system, brand palette, or layout spec — never hardcode a single style or color scheme.
+A universal, theme-agnostic UI engineering and visual design specification: the structural, optical, typographic, and lighting rules that separate designer-crafted minimalism from generic "AI slop." Apply these principles dynamically on top of any user-provided design system, brand palette, or layout spec , never hardcode a single style or color scheme.
 
 ## Core philosophy
 
@@ -28,7 +31,7 @@ Minimalism is not the absence of styling; it is the deliberate removal of visual
 
 ## Execution pipeline
 
-Run this 5-stage pipeline before writing final UI code. Each stage has a reference file with the full rules — read it when you reach that stage.
+Run this 5-stage pipeline before writing final UI code. Each stage has a reference file with the full rules , read it when you reach that stage.
 
 ### Stage 1: Ingest and derive tokens
 Read the user's polarity (light, dark, or both), primary brand color, typography preference, and information density. Derive the 4-tier neutral surface ramp, 4-tier text contrast ramp, hairline border opacity, and 2-layer elevation shadows as CSS custom properties (`--surface-0` to `--surface-3`, `--text-1` to `--text-4`, `--border-subtle`, `--radius-card`, `--radius-inner`).
@@ -68,7 +71,7 @@ Verify all 12 checkpoints before considering a minimal UI complete:
 
 ## References
 
-- `references/color-and-surfaces.md` — 90/8/2 color ratio, neutral tinting, surface luminance ladder, text contrast tiers, semantic restraint, shadow construction, specular rim lighting, gradient restraint.
-- `references/spacing-and-layout.md` — 4px/8px spacing scale, proximity rule, concentric border-radius math, layout proportions (sidebar, nav rows, control heights, button padding, icon rails, line length).
-- `references/typography.md` — font pairing archetypes, optical tracking and leading table, tonal compound typography, numeric craft.
-- `references/components-and-icons.md` — navigation active states, cards and bento grids, segmented controls, data visualization, iconography rules, microcopy, embedded media.
+- `references/color-and-surfaces.md` , 90/8/2 color ratio, neutral tinting, surface luminance ladder, text contrast tiers, semantic restraint, shadow construction, specular rim lighting, gradient restraint.
+- `references/spacing-and-layout.md` , 4px/8px spacing scale, proximity rule, concentric border-radius math, layout proportions (sidebar, nav rows, control heights, button padding, icon rails, line length).
+- `references/typography.md` , font pairing archetypes, optical tracking and leading table, tonal compound typography, numeric craft.
+- `references/components-and-icons.md` , navigation active states, cards and bento grids, segmented controls, data visualization, iconography rules, microcopy, embedded media.
