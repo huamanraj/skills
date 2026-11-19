@@ -7,6 +7,7 @@ Read during Stage 1 (token derivation) and Stage 4 (surface craft) of the pipeli
 Never judge a color palette in isolation; judge it by proportional area and luminance separation. Regardless of the brand color supplied, enforce the following architecture.
 
 ### The 90 / 8 / 2 surface ratio
+The neutral-dominant split below is the default for neutral SaaS interfaces and dashboards, not a universal law: editorial, marketing, and playful consumer products can carry more brand color (see `product-adaptation.md`). What stays constant is the discipline behind it: the canvas stays neutral and quiet, and high-chroma color stays reserved for actions and focal points so the hierarchy never shouts.
 - **90% Neutral Canvas & Surfaces:** backgrounds, sidebars, cards, dividers, standard text.
 - **8% Tinted Neutrals & Secondary Accents:** subtle hover states, active container tints, muted badges, secondary chart series.
 - **2% High-Chroma Focal Accent:** primary CTA button, active focus rings, critical alerts, key focal metrics.
@@ -14,9 +15,9 @@ Never judge a color palette in isolation; judge it by proportional area and lumi
 ### Neutral tinting (preventing "dead gray" and "neon soup")
 Pure sterile gray (`#808080`) or pure pitch black (`#000000`) looks harsh or lifeless; heavily saturated backgrounds look amateurish.
 - **Warm or cool micro-tinting:** infuse neutral backgrounds with a microscopic amount of the brand hue (chroma ≤ 0.015 in OKLCH, or saturation ≤ 6% in HSL).
-  - Cool/editorial light: canvas shifts almost imperceptibly toward cool sage or slate while cards remain crisp white.
-  - Warm/ambient light: canvas uses warm alabaster (`#F6F5F2`) paired with pure white or soft cream cards.
-  - Refined dark: avoid bright indigo/purple-washed dark modes. Anchor dark surfaces in deep neutral charcoal (luminance ~4%–14%) with ultra-low saturation (≤ 8%).
+ - Cool/editorial light: canvas shifts almost imperceptibly toward cool sage or slate while cards remain crisp white.
+ - Warm/ambient light: canvas uses warm alabaster (`#F6F5F2`) paired with pure white or soft cream cards.
+ - Refined dark: avoid bright indigo/purple-washed dark modes. Anchor dark surfaces in deep neutral charcoal (luminance ~4%–14%) with ultra-low saturation (≤ 8%).
 
 ### Surface luminance ladder
 Create figure-ground separation without heavy lines by defining four discrete surface tiers:
@@ -45,11 +46,11 @@ When rendering positive/negative deltas, warnings, or statuses:
 
 The #1 tell of AI-generated minimal UI is either muddy, blurry drop shadows or flat wireframe emptiness. Real minimalism uses subtle optical physics to make surfaces feel physical and tactile.
 
-### The golden rule: hairline borders + whisper shadows
-A shadow alone looks blurry; a border alone looks flat and boxy. Pair a crisp 1px boundary with a feathered ambient shadow:
+### Separating surfaces: borders, shadows, or both
+A shadow alone can look blurry; a border alone can look flat and boxy. The safest default for an elevated card is a crisp 1px boundary paired with a feathered ambient shadow, but it is not a law: choose a border, a shadow, both, or neither according to the surface's place in the hierarchy. Flat sections inside one continuous surface need no separation at all; a card sitting directly on the canvas often reads cleanly with a hairline border alone; floating overlays earn a real shadow (see the ladder in `page-composition.md`).
 
 ```css
-/* Light Mode Elevated Surface (Card / Active Pill) */
+/* Light Mode Elevated Surface (Card / Active Pill): border + whisper shadow */
 .surface-elevated-light {
   background: var(--surface-raised);
   border: 1px solid rgba(15, 23, 42, 0.06); /* Crisp boundary */

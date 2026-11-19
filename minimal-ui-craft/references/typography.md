@@ -9,18 +9,18 @@ In minimal UI, typography is the primary visual texture. A design with ordinary 
 Select a pairing that matches the product's brand personality (or respect the user's provided fonts):
 
 1. **Modern Precision (single neo-grotesque family)**
-   - Use for: developer tools, AI workspaces, high-density SaaS, smart-home dashboards.
-   - Approach: one crisp sans-serif (`Inter`, `Geist`, `Plus Jakarta Sans`, `SF Pro`, `Satoshi`). Rely on weight contrast (400 vs 500 vs 600), scale jumps, and letter-spacing to create rhythm.
+ - Use for: developer tools, AI workspaces, high-density SaaS, smart-home dashboards.
+ - Approach: one crisp sans-serif (`Inter`, `Geist`, `Plus Jakarta Sans`, `SF Pro`, `Satoshi`). Rely on weight contrast (400 vs 500 vs 600), scale jumps, and letter-spacing to create rhythm.
 2. **Editorial Warmth (refined serif + clean sans)**
-   - Use for: wellness, finance, publishing, calm productivity, boutique B2B.
-   - Approach: a calm, legible serif (`Instrument Serif`, `Newsreader`, `Fraunces`, `Lora`, `Georgia`) for page headings, section titles, and hero KPI figures, paired with a neutral sans-serif (`Inter`, `DM Sans`) for navigation, labels, inputs, and body copy. Never use serif fonts for tiny 11px uppercase labels or dense table cells.
+ - Use for: wellness, finance, publishing, calm productivity, boutique B2B.
+ - Approach: a calm, legible serif (`Instrument Serif`, `Newsreader`, `Fraunces`, `Lora`, `Georgia`) for page headings, section titles, and hero KPI figures, paired with a neutral sans-serif (`Inter`, `DM Sans`) for navigation, labels, inputs, and body copy. Never use serif fonts for tiny 11px uppercase labels or dense table cells.
 3. **Technical / Analytical (clean sans + monospace)**
-   - Use for: analytics, telemetry, financial ledgers, infrastructure tools.
-   - Approach: neutral sans-serif for interface chrome; crisp monospace (`JetBrains Mono`, `Geist Mono`, `IBM Plex Mono`) for IDs, shortcuts (⌘K), timestamps, API keys, and tabular metrics.
+ - Use for: analytics, telemetry, financial ledgers, infrastructure tools.
+ - Approach: neutral sans-serif for interface chrome; crisp monospace (`JetBrains Mono`, `Geist Mono`, `IBM Plex Mono`) for IDs, shortcuts (⌘K), timestamps, API keys, and tabular metrics.
 
 ## 2. Optical tracking (letter-spacing) & leading (line-height)
 
-Default browser typography looks amateurish at extreme sizes. Apply inverse scaling: as font size increases, tighten both tracking and line-height.
+Default browser typography looks amateurish at extreme sizes. The general pattern is inverse scaling: as font size increases, tracking and line-height usually tighten. The table below is a starting point, not a prescription: adjust tracking by the actual font family, size, and rendered appearance. Some faces (geometric sans, wide grotesques) need little or no negative tracking; others (condensed display faces) need more. Judge the rendered result, not the number.
 
 | Role | Typical Size | Font Weight | Line Height | Letter Spacing |
 | :--- | :--- | :--- | :--- | :--- |

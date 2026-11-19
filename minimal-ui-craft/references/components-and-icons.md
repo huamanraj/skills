@@ -1,19 +1,19 @@
 # Component Craft, Iconography & Microcopy
 
-Read during Stage 5 (polish pass) of the pipeline in SKILL.md, and whenever building navigation, cards, segmented controls, charts, or icon systems.
+Read during Stage 6 (states, motion, accessibility) of the pipeline in SKILL.md, and whenever building navigation, cards, segmented controls, charts, or icon systems.
 
 ## 1. Navigation & active states
 
 - **Keep inactive items quiet:** `text-secondary` with transparent backgrounds.
 - **Make active items tactile, not loud:** instead of flooding an active sidebar link with a bright saturated brand rectangle:
-  - Light mode: elevated crisp white pill/card on a tinted sidebar, hairline border, whisper shadow, and `text-primary` (font-weight 500).
-  - Dark mode: slightly raised neutral surface (+4% luminance) with a subtle 1px top specular edge and crisp `text-primary`.
+ - Light mode: elevated crisp white pill/card on a tinted sidebar, hairline border, whisper shadow, and `text-primary` (font-weight 500).
+ - Dark mode: slightly raised neutral surface (+4% luminance) with a subtle 1px top specular edge and crisp `text-primary`.
 - **De-clutter counters:** replace bright glowing pill badges next to nav items (`18`, `64`, `210`) with quiet, right-aligned `tabular-nums` in `text-tertiary`. Reserve a solid high-contrast dot or pill strictly for genuinely urgent unread alerts.
 
 ## 2. Cards & bento grids
 
 - **Header anatomy:** top-left subtle title (13–14px, `text-secondary` or `text-primary`), optional top-right quiet action (`ALL`, `→`, or compact segmented control `DAY / WK / MO`). Never add thick horizontal divider lines under card headers unless the card contains a scrollable table.
-- **Breathing room:** at least 25–35% of a minimal card's interior stays clean negative space. Do not pack four unrelated charts, three paragraphs, and two buttons into one card.
+- **Breathing room:** as a rough guide, at least 25–35% of a minimal card's interior stays clean negative space, and a card should never pack four unrelated charts, three paragraphs, and two buttons together. Density follows purpose, not a fixed number: data tables, compact professional controls, and dense developer tools legitimately run tighter, while marketing cards and empty states breathe more. Set density per component and per product (see `product-adaptation.md`).
 - **Nested rows:** inside list cards (to-do lists, alert feeds, chat histories), separate items using either delicate concentric sub-cards (1px ultra-low-opacity border) OR subtle 1px inset hairline dividers; never use both heavy boxes and heavy shadows at once.
 
 ## 3. Segmented controls & micro-interactions
@@ -27,9 +27,9 @@ Read during Stage 5 (polish pass) of the pipeline in SKILL.md, and whenever buil
 - **Bars & splines:** avoid thick neon bars with heavy blur glows. Use thin, crisp strokes (1.5–2px) for line/area charts, understated muted fills with subtle vertical fade-to-transparent gradients, and delicate tick-marks or slender columns for bar charts.
 - **Axes:** axis labels in 10–11px `text-tertiary` with `tabular-nums`. Remove redundant axis spines when horizontal gridlines already anchor the eye.
 
-## 5. Strict iconography rules
+## 5. Iconography rules
 
-- **Zero emojis in UI chrome:** never use system emojis as interface icons, button decorations, or status markers. They destroy visual consistency and instantly signal AI-generated templates.
+- **Emojis are not default UI icons:** do not use system emojis as interface icons, button decorations, or status markers by default; they destroy visual consistency and signal AI-generated templates. A deliberately playful consumer product may choose emoji as part of its voice (reactions, chat, gamified moments); that choice must be systematic and consistent, never accidental clutter.
 - **Single family & uniform stroke:** one cohesive vector icon set (Lucide, Phosphor, Tabler, Heroicons) with consistent stroke width (1.5px for 16–20px icons; 1.75px for 24px icons).
 - **Icon-to-text sizing:** pair 14px text with 16px icons; pair 13px text with 15–16px icons. Icons sit at 70–85% of the adjacent text's luminance unless active, so icons never overpower labels.
 

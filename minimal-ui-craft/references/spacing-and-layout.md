@@ -4,9 +4,9 @@ Read during Stage 2 (spatial skeleton) and Stage 4 (concentric radii) of the pip
 
 Great UI looks "effortless" because its geometry obeys strict mathematical relationships. When spacing is arbitrary, the human eye registers subconscious tension.
 
-## 1. Strict spacing scale (the 4px / 8px grid)
+## 1. Spacing scale (the 4px / 8px base grid)
 
-All margins, paddings, and gaps MUST be drawn from a single geometric scale. Never invent arbitrary values like `13px`, `19px`, `26px`, or `38px`.
+Draw margins, paddings, and gaps from a single geometric scale by default. The scale is the starting point, not a straitjacket: permit optical adjustments (a 14px gap that aligns two baselines beats a dogmatic 16px) and component-specific dimensions (a 34px nav row, a 260px sidebar) when they serve the design. What is banned is arbitrariness: every value should be a deliberate choice, not a random number like `13px` or `38px` that nothing else relates to.
 
 | Token | Value | Primary Use Case |
 | :--- | :--- | :--- |
@@ -30,11 +30,13 @@ Example: if cards in a dashboard grid have a 16px gap, internal card padding sho
 
 ## 3. Concentric border radius math
 
-When nesting a rounded element (button, nested task row, active pill, thumbnail) inside a rounded parent card, never give both the exact same radius. Mismatched corners create ugly thick wedges at the diagonals.
+When nesting a rounded element (button, nested task row, active pill, thumbnail) inside a rounded parent card, avoid giving both the exact same radius: matched corners create ugly thick wedges at the diagonals when the shapes are genuinely concentric.
 
-Calculate inner radius concentrically:
+For shapes that truly share a center or an edge, calculate the inner radius concentrically:
 
 `R_inner = max(4px, R_outer - P_padding)`
+
+This is a rule of thumb for genuinely concentric shapes, not a requirement for every nested component: a chip inside a wide card, or an element offset far from the parent's corner, just needs a radius from the ladder that looks calm next to its parent.
 
 Practical ladder:
 - **Outer app shell / floating window:** 20–24px
@@ -49,9 +51,9 @@ Proportional discipline prevents cramped or awkwardly stretched interfaces:
 - **Sidebar width:** 220–260px on desktop (240px is the sweet spot). Never let a navigation sidebar exceed 22% of the desktop viewport width.
 - **Navigation row height:** 34–40px (36px ideal) with 10–12px horizontal padding and an 8–10px gap between icon and label.
 - **Button & input height parity:** standard inputs, search bars, and buttons on the same horizontal axis MUST share identical heights:
-  - Compact/dense UI: 32px
-  - Standard SaaS/web UI: 36px or 40px
-  - Spacious/consumer UI: 44px
+ - Compact/dense UI: 32px
+ - Standard SaaS/web UI: 36px or 40px
+ - Spacious/consumer UI: 44px
 - **Button aspect ratio & padding:** horizontal padding ≈ 2 × vertical padding (e.g., `8px 16px` or `10px 20px`) so buttons look balanced rather than boxy.
 - **Icon rail alignment:** every icon in a vertical navigation stack shares the exact same left coordinate (x-axis rail) and container box (16px or 18px), even if one section has sub-items or headers. Align section headings to the exact same left rail as the icons below them.
 - **Line length (measure):** keep readable prose and card descriptions between 45 and 72 characters per line (`max-width: 60ch`).
