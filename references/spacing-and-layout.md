@@ -41,7 +41,7 @@ Practical ladder:
 - **Primary bento card:** 14–16px (with 16–20px padding)
 - **Nested row / sub-card / input:** 8–10px
 - **Small control / tag / checkbox:** 4–6px
-- **Segmented pills & primary pill CTAs:** 9999px (`rounded-full`) — only when height ≤ 44px. Never use `rounded-full` on tall rectangular cards.
+- **Segmented pills & primary pill CTAs:** 9999px (`rounded-full`), only when height ≤ 44px. Never use `rounded-full` on tall rectangular cards.
 
 ## 4. Height, width & layout proportions
 
